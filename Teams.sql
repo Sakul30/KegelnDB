@@ -5,13 +5,10 @@ CREATE TABLE `Team` (
     `SWID` INT,
     `LeagueID` INT NOT NULL,
     `ClubID` INT NOT NULL,
-    PRIMARY KEY (`TeamID`)
-    FOREIGN KEY (`LeagueID`) REFERENCES League(`LeagueID`),
-    FOREIGN KEY (`ClubID`) REFERENCES Club(`ClubID`)
+    PRIMARY KEY (`TeamID`),
+    CONSTRAINT `FK_LeagueID` FOREIGN KEY (`LeagueID`) REFERENCES `League` (`LeagueID`) ON UPDATE RESTRICT ON DELETE RESTRICT,
+    CONSTRAINT `FK_ClubID` FOREIGN KEY (`ClubID`) REFERENCES `Club` (`ClubID`) ON UPDATE RESTRICT ON DELETE RESTRICT
 );
-
-INSERT INTO Team (DisplayName, Gender, LeagueID, ClubID)
-VALUES ('', '', , );
 
 INSERT INTO Team (DisplayName, Gender, LeagueID, ClubID, SWID)
 VALUES ('R09 Wölfersheim 1', 'M', 9, 1, NULL);
@@ -22,7 +19,7 @@ VALUES ('R09 Wölfersheim 3', 'X', 21, 1, NULL);
 INSERT INTO Team (DisplayName, Gender, LeagueID, ClubID, SWID)
 VALUES ('R09 Wölfersheim 4', 'X', 22, 1, NULL);
 INSERT INTO Team (DisplayName, Gender, LeagueID, ClubID, SWID)
-VALUES ('R09 Wölfersheim 5', 'X' 24, 1, NULL);
+VALUES ('R09 Wölfersheim 5', 'X', 24, 1, NULL);
 INSERT INTO Team (DisplayName, Gender, LeagueID, ClubID, SWID)
 VALUES ('R09 Wölfersheim 1', 'F', 16, 1, NULL);
 
