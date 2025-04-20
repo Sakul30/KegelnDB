@@ -91,3 +91,5 @@ INSERT INTO Player (ClubID, FirstName, LastName, IsActive, Gender, PlayerCard)
 VALUES (1, 'Gernot', 'Bopp', true, 'm', 123456789);
 INSERT INTO Player (ClubID, FirstName, LastName, IsActive, Gender, PlayerCard)
 VALUES (1, 'Julian', 'Bopp', true, 'm', 123456789);
+INSERT INTO Player (ClubID, FirstName, LastName, IsActive, Gender, PlayerCard)
+VALUES (1, 'Jan', 'Hofmann', true, 'm', 123456789);
