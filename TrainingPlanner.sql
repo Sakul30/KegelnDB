@@ -1,0 +1,6 @@
+CREATE TABLE TrainingPlanner (
+    TrainingID BIGINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    TrainingDay DATE NOT NULL,
+    TrainingTime TIME NOT NULL,
+    Name VARCHAR(255) NOT NULL
+) ENGINE=InnoDB;

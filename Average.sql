@@ -1,0 +1,23 @@
+CREATE TABLE Average (
+    AverageID BIGINT NOT NULL AUTO_INCREMENT,
+    Saison INT NOT NULL,
+    LeagueID BIGINT NULL,
+    Position INT NOT NULL,
+    PlayerName VARCHAR(255) NOT NULL,
+    PlayerID BIGINT NOT NULL,
+    HomeGameCount INT DEFAULT 0,
+    GuestGameCount INT DEFAULT 0,
+    TotalGameCount INT DEFAULT 0,
+    HomeAverage DECIMAL(5,1) DEFAULT 0.0,
+    GuestAverage DECIMAL(5,1) DEFAULT 0.0,
+    TotalAverage DECIMAL(5,1) DEFAULT 0.0,
+    HomePoints DECIMAL(3,1) DEFAULT 0.0,
+    GuestPoints DECIMAL(3,1) DEFAULT 0.0,
+    TotalPoints DECIMAL(3,1) DEFAULT 0.0,
+    MissAverage Decimal(3,1) DEFAULT 0.0,
+    Lowest INT NULL,
+    Highest INT NULL,
+    PRIMARY KEY (AverageID),
+    FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID),
+    FOREIGN KEY (LeagueID) REFERENCES League(LeagueID)
+) ENGINE=InnoDB;

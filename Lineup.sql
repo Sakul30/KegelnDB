@@ -1,0 +1,14 @@
+CREATE TABLE Lineup (
+    LineupID BIGINT NOT NULL AUTO_INCREMENT,
+    Saison INT NOT NULL,
+    TeamID BIGINT NULL,
+    Position INT NOT NULL,
+    PlayerID BIGINT NOT NULL,
+    GameID BIGINT NOT NULL,
+    Week INT NULL,
+    Title VARCHAR(255) NOT NULL,
+    FOREIGN KEY (GameID) REFERENCES Game(GameID),
+    FOREIGN KEY (TeamID) REFERENCES Team(TeamID),
+    FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID),
+    PRIMARY KEY (LineupID, Saison)
+) ENGINE=InnoDB;
