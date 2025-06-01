@@ -4,10 +4,10 @@ CREATE TABLE ClubChampionship (
     Saison INT NOT NULL,
     Level INT NOT NULL,
     Player1 VARCHAR(255) NULL,
-    Player1Points DECIMAL(3,1) NULL DEFAULT 0.0,
+    Player1Points DOUBLE(3,1) NULL DEFAULT 0.0,
     Player1Total INT NULL DEFAULT 0,
     Player2 VARCHAR(255) NULL DEFAULT '',
-    Player2Points DECIMAL(3,1) NULL DEFAULT 0.0,
+    Player2Points DOUBLE(3,1) NULL DEFAULT 0.0,
     Player2Total INT NULL DEFAULT 0,
     PRIMARY KEY (DuellID, Saison)
 ) ENGINE=InnoDB;
