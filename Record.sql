@@ -35,7 +35,8 @@ VALUES (0,'Patrick Lüftner',NULL,NULL,NULL,677, NULL, 'Obernburg', 1082, NULL, 
 (0,'Tina Laga',NULL,NULL,NULL,481, NULL, NULL, NULL, NULL, NULL ),
 (0,'Vanessa Schröder',NULL,NULL,NULL,552, NULL, NULL, NULL, NULL, NULL ),
 (0,'Bianca Westenburger',NULL,NULL,NULL,548, NULL, NULL, NULL, NULL, NULL ),
-(0,'Vanessa Westenburger',NULL,NULL,NULL,513, NULL, NULL, NULL, NULL, NULL );
+(0,'Vanessa Westenburger',NULL,NULL,NULL,513, NULL, NULL, NULL, NULL, NULL ),
+(0,'Hendrik Lüftner', 461,'2023-02-04','Mühlheim',602, '2024-01-27', 'Lorsch', NULL, NULL, NULL );
 
 
 
