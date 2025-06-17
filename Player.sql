@@ -3,7 +3,7 @@ CREATE TABLE Player (
     ClubID BIGINT NOT NULL,
     FirstName VARCHAR(255) NOT NULL,
     LastName VARCHAR(255) NOT NULL,
-    IsActive BOOLEAN NOT NULL,
+    IsActiv BOOLEAN NOT NULL,
     Gender CHAR(1) NOT NULL,
     Birthday DATE NULL DEFAULT NULL,
     PlayerCard INT NULL DEFAULT 0,
@@ -11,7 +11,7 @@ CREATE TABLE Player (
     FOREIGN KEY (ClubID) REFERENCES Club (ClubID) ON UPDATE RESTRICT ON DELETE RESTRICT
 );
 
-INSERT INTO Player (ClubID, FirstName, LastName, IsActive, Gender, PlayerCard)
+INSERT INTO Player (ClubID, FirstName, LastName, IsActiv, Gender, PlayerCard)
 VALUES (1, 'Patrick', 'Lüftner', true, 'm', 123456789),
 (1, 'Dirk', 'Bonarius', true, 'm', 123456789),
 (1, 'Daniel', 'Rödl', true, 'm', 123456789),

@@ -3,16 +3,16 @@ CREATE TABLE ClubChampionship (
     DuellID BIGINT AUTO_INCREMENT NOT NULL,
     Saison INT NOT NULL,
     Level INT NOT NULL,
-    Player1 VARCHAR(255) NULL,
-    Player1Points DOUBLE(3,1) NULL DEFAULT 0.0,
-    Player1Total INT NULL DEFAULT 0,
-    Player2 VARCHAR(255) NULL DEFAULT '',
-    Player2Points DOUBLE(3,1) NULL DEFAULT 0.0,
-    Player2Total INT NULL DEFAULT 0,
+    PlayerOne VARCHAR(255) NULL,
+    PlayerOnePoints DOUBLE(3,1) NULL DEFAULT 0.0,
+    PlayerOneTotal INT NULL DEFAULT 0,
+    PlayerTwo VARCHAR(255) NULL DEFAULT '',
+    PlayerTwoPoints DOUBLE(3,1) NULL DEFAULT 0.0,
+    PlayerTwoTotal INT NULL DEFAULT 0,
     PRIMARY KEY (DuellID, Saison)
 ) ENGINE=InnoDB;
 
-INSERT INTO KVW.ClubChampionship (Saison, Level, Player1, Player1Points, Player1Total, Player2, Player2Points, Player2Total)
+INSERT INTO KVW.ClubChampionship (Saison, Level, PlayerOne, PlayerOnePoints, PlayerOneTotal, PlayerTwo, PlayerTwoPoints, PlayerTwoTotal)
 VALUES (2324, 0, 'Daniel Rödl', 0, 573, 'Patrick Lüftner', 4, 629),
 (2324, 1, 'Lukas Geck', 3, 570, 'Sandra Bonarius', 1, 535),
 (2324, 2, 'Lukas Geck', 0.5, 545, 'Patrick Lüftner', 3.5, 575),

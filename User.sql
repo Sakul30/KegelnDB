@@ -3,6 +3,8 @@ CREATE TABLE User (
     Name VARCHAR(255) NOT NULL,
     Password VARCHAR(255) NOT NULL,
     Mail VARCHAR(255) NULL,
+    Firstname VARCHAR(255) NULL,
+    Lastname VARCHAR(255) NULL,
     Token VARCHAR(255) NOT NULL,
     PlayerID BIGINT NULL,
     ClubID BIGINT NULL,
