@@ -38,5 +38,14 @@ VALUES (0,'Patrick Lüftner',NULL,NULL,NULL,677, NULL, 'Obernburg', 1082, NULL, 
 (0,'Vanessa Westenburger',NULL,NULL,NULL,513, NULL, NULL, NULL, NULL, NULL ),
 (0,'Hendrik Lüftner', 461,'2023-02-04','Mühlheim',602, '2024-01-27', 'Lorsch', NULL, NULL, NULL );
 
-
+CREATE TABLE Bonus (
+    BonusID BIGINT NOT NULL AUTO_INCREMENT,
+    Saison INT NOT NULL,
+    GameID BIGINT NOT NULL,
+    PlayerID BIGINT NOT NULL,
+    Amount DOUBLE(5,2) DEFAULT 0.0
+    PRIMARY KEY (BonusID, Saison, GameID, PlayerID),
+    FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID),
+    FOREIGN KEY (GameID) REFERENCES Game(GameID)
+) ENGINE=InnoDB;
 
