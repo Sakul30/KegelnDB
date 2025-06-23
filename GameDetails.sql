@@ -17,4 +17,29 @@ CREATE TABLE GameDetails (
     FOREIGN KEY (GameID) REFERENCES Game (GameID) ON UPDATE RESTRICT ON DELETE RESTRICT,
     FOREIGN KEY (TeamID) REFERENCES Team (TeamID) ON UPDATE RESTRICT ON DELETE RESTRICT,
     FOREIGN KEY (PlayerID) REFERENCES Player (PlayerID) ON UPDATE RESTRICT ON DELETE RESTRICT
-);
+) ENGINE=InnoDB;
+
+CREATE TABLE GameAnalyse (
+    GameAnalyseID BIGINT NOT NULL AUTO_INCREMENT,
+    Saison INT NOT NULL,
+    GameID BIGINT NOT NULL,
+    PlayerID BIGINT NOT NULL,
+    LaneOneFull INT NULL,
+    LaneOneClear INT NULL,
+    LaneOneMiss INT NULL,
+    LaneTwoFull INT NULL,
+    LaneTwoClear INT NULL,
+    LaneTwoMiss INT NULL,
+    LaneThreeFull INT NULL,
+    LaneThreeClear INT NULL,
+    LaneThreeMiss INT NULL,
+    LaneFourFull INT NULL,
+    LaneFourClear INT NULL,
+    LaneFourMiss INT NULL,
+    TotalFull INT NULL,
+    TotalClear INT NULL,
+    TotalMiss INT NULL,
+    PRIMARY KEY (GameAnalyseID, Saison, GameID),
+    FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID),
+    FOREIGN KEY (GameID) REFERENCES Game(GameID)
+) ENGINE=InnoDB;
