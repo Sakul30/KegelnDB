@@ -17,7 +17,7 @@ CREATE TABLE Record (
 ) ENGINE=InnoDB;
 
 INSERT INTO KVW.Record (PlayerID, PlayerName, Record100, Record100Date, Record100Location, Record120, Record120Date, Record120Location, Record200, Record200Date, Record200Location) 
-VALUES (0,'Patrick Lüftner',NULL,NULL,NULL,677, NULL, 'Obernburg', 1082, NULL, 'Eppelheim' ),
+VALUES (1,'Patrick Lüftner',NULL,NULL,NULL,677, NULL, 'Obernburg', 1082, NULL, 'Eppelheim' ),
 (0,'Dirk Bonarius',NULL,NULL,NULL,657, NULL, 'Wohnbach', 1060, NULL, 'Aschaffenburg Damm' ),
 (0,'Daniel Rödl',NULL,NULL,NULL,630, NULL, 'Wohnbach', 1058, NULL, NULL ),
 (0,'Tobias Wolf',NULL,NULL,NULL,613, NULL, NULL, 1034, NULL, NULL ),
@@ -38,14 +38,5 @@ VALUES (0,'Patrick Lüftner',NULL,NULL,NULL,677, NULL, 'Obernburg', 1082, NULL, 
 (0,'Vanessa Westenburger',NULL,NULL,NULL,513, NULL, NULL, NULL, NULL, NULL ),
 (0,'Hendrik Lüftner', 461,'2023-02-04','Mühlheim',602, '2024-01-27', 'Lorsch', NULL, NULL, NULL );
 
-CREATE TABLE Bonus (
-    BonusID BIGINT NOT NULL AUTO_INCREMENT,
-    Saison INT NOT NULL,
-    GameID BIGINT NOT NULL,
-    PlayerID BIGINT NOT NULL,
-    Amount DOUBLE(5,2) DEFAULT 0.0
-    PRIMARY KEY (BonusID, Saison, GameID, PlayerID),
-    FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID),
-    FOREIGN KEY (GameID) REFERENCES Game(GameID)
-) ENGINE=InnoDB;
+
 
