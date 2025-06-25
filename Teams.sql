@@ -11,7 +11,7 @@ CREATE TABLE Team (
     FOREIGN KEY (ClubID) REFERENCES Club (ClubID) ON UPDATE RESTRICT ON DELETE RESTRICT
 );
 
-INSERT INTO Team (Saison, TeamName, Gender, LeagueID, ClubID, SWID)
+INSERT INTO Team (Saison, TeamName, Gender, LeagueID, ClubID, SWID) VALUES
 (2425, 'R09 Wölfersheim 1', 'M', 9, 1, 27454),
 (2425, 'R09 Wölfersheim 2', 'M', 11, 1, 27470),
 (2425, 'R09 Wölfersheim 3', 'X', 21, 1, 26205),
