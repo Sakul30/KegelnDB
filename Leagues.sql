@@ -3,7 +3,7 @@ CREATE TABLE League (
     Saison INT NOT NULL,
     Name VARCHAR(255) NOT NULL,
     District INT NULL,
-    SWID VARCHAR(20) NULL,
+    SWID INT NULL,
     PRIMARY KEY (LeagueID, Saison)
 ) ENGINE=InnoDB;
 

@@ -1,5 +1,5 @@
 CREATE TABLE GameDays (
-    GameDayID BIGINT AUTO_INCREMENT NOT NULL,
+    SWID BIGINT NOT NULL,
     Saison INT NOT NULL,
     Title VARCHAR(255) NOT NULL,
     Week INT NULL,
@@ -7,5 +7,5 @@ CREATE TABLE GameDays (
     Number INT NULL,
     LeagueID BIGINT NOT NULL,
     FOREIGN KEY (LeagueID) REFERENCES League(LeagueID),
-    PRIMARY KEY (GameDayID, Saison)
+    PRIMARY KEY (SWID, Saison)
 ) ENGINE=InnoDB;

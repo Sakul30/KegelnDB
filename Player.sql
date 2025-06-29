@@ -1,16 +1,16 @@
 
 CREATE TABLE Player (
     PlayerID BIGINT NOT NULL AUTO_INCREMENT,
-    ClubID BIGINT NOT NULL,
+    ClubID INT NULL,
     FirstName VARCHAR(255) NOT NULL,
     LastName VARCHAR(255) NOT NULL,
     IsActiv BOOLEAN NOT NULL,
-    Gender CHAR(1) NOT NULL,
+    Gender CHAR(1) NULL,
     Birthday DATE NULL DEFAULT NULL,
     PlayerCard INT NULL DEFAULT 0,
     PRIMARY KEY (PlayerID),
     FOREIGN KEY (ClubID) REFERENCES Club (ClubID) ON UPDATE RESTRICT ON DELETE RESTRICT
-);
+) ENGINE=InnoDB;
 
 INSERT INTO Player (ClubID, FirstName, LastName, IsActiv, Gender, PlayerCard, Birthday)
 VALUES (1, 'Patrick', 'Lüftner', true, 'm', 123456789, null),
