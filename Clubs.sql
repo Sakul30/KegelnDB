@@ -1,11 +1,13 @@
 CREATE TABLE Club (
     ClubID INT NOT NULL AUTO_INCREMENT,
     ClubName VARCHAR(255) NOT NULL,
-    FacilityAddress VARCHAR(255) NULL,
-    SportsDirector VARCHAR(255) NULL,
-    SWID VARCHAR(20) NULL,
+    FacilityAddress VARCHAR(255) DEFAULT NULL,
+    SportsDirector VARCHAR(255) DEFAULT NULL,
+    SWID VARCHAR(20) DEFAULT NULL,
+    District INT DEFAULT NULL,
+    Land VARCHAR(255),
     PRIMARY KEY (ClubID)
-);
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_uca1400_ai_ci;
 
 -- Clubs in der Hessenliga-A Männer
 INSERT INTO Club (ClubName, FacilityAddress, SportsDirector, SWID) 
