@@ -3,6 +3,7 @@ CREATE TABLE ClubChampionship (
     DuellID BIGINT AUTO_INCREMENT NOT NULL,
     Saison INT NOT NULL,
     Level INT NOT NULL,
+    Title VARCHAR(255) NULL,
     PlayerOne VARCHAR(255) NULL,
     PlayerOnePoints DOUBLE(3,1) NULL DEFAULT 0.0,
     PlayerOneTotal INT NULL DEFAULT 0,
