@@ -84,7 +84,7 @@ VALUES
 (2024, 6, 'Qualifikation', 'Bianca Westenburger', 0, 0, 'Georg Hartmann', 4, 413),
 (2024, 6, 'Qualifikation', 'Stephan Lachmann', 1, 468, 'Mario Pfeffer', 3, 546),
 (2024, 6, 'Qualifikation', 'Hans-Erich Zinsheimer', 0, 483, 'Tobias Wolf', 4, 575),
-(2024, 6, 'Qualifikation', 'Melanie Geck', 0, 331, 'Marc Burkhardt', 4, 534);
+(2024, 6, 'Qualifikation', 'Melanie Geck', 0, 331, 'Marc Burkhardt', 4, 534),
 
 (2025, 0, 'Finale', 'Hendrik Lüftner', 2, 555, 'Daniel Rödl', 2, 544),
 
