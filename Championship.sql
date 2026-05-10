@@ -26,7 +26,7 @@ INSERT INTO KVW.ClubChampionship
     PlayerTwoTotal
 )
 VALUES
-(2324, 0, 'Finale', 'Daniel Rödl', 0, 573, 'Patrick Lüftner', 4, 629),
+(2024, 0, 'Finale', 'Daniel Rödl', 0, 573, 'Patrick Lüftner', 4, 629),
 
 (2024, 1, 'Spiel um Platz 3', 'Lukas Geck', 3, 570, 'Sandra Bonarius', 1, 535),
 
