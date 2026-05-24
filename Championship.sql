@@ -146,3 +146,76 @@ VALUES
 (2025, 6, 'Qualifikation', 'Max Montag', 0, 375, 'Rene Lenck', 4, 552),
 (2025, 6, 'Qualifikation', 'Mario Pfeffer', 0, 0, 'Jutta Westenburger', 4, 0),
 (2025, 6, 'Qualifikation', 'Hans Erich Zinsheimer', 4, 0, NULL, NULL, NULL);
+
+INSERT INTO KVW.ClubChampionship 
+(
+    Saison,
+    Level,
+    Title,
+    PlayerOne,
+    PlayerOnePoints,
+    PlayerOneTotal,
+    PlayerTwo,
+    PlayerTwoPoints,
+    PlayerTwoTotal
+)
+VALUES
+(2026, 0, 'Finale', '', 0, 0, '', 0, 0),
+
+(2026, 1, 'Spiel um Platz 3', '', 0, 0, '', 0, 0),
+
+(2026, 2, 'Halbfinale', '', 0, 0, '', 0, 0),
+(2026, 2, 'Halbfinale', '', 0, 0, '', 0, 0),
+
+(2026, 3, 'Viertelfinale', '', 0, 0, '', 0, 0),
+(2026, 3, 'Viertelfinale', '', 0, 0, '', 0, 0),
+(2026, 3, 'Viertelfinale', '', 0, 0, '', 0, 0),
+(2026, 3, 'Viertelfinale', '', 0, 0, '', 0, 0),
+
+(2026, 4, 'Achtelfinale', '', 0, 0, '', 0, 0),
+(2026, 4, 'Achtelfinale', '', 0, 0, '', 0, 0),
+(2026, 4, 'Achtelfinale', '', 0, 0, '', 0, 0),
+(2026, 4, 'Achtelfinale', '', 0, 0, '', 0, 0),
+(2026, 4, 'Achtelfinale', '', 0, 0, '', 0, 0),
+(2026, 4, 'Achtelfinale', '', 0, 0, '', 0, 0),
+(2026, 4, 'Achtelfinale', '', 0, 0, '', 0, 0),
+(2026, 4, 'Achtelfinale', '', 0, 0, '', 0, 0),
+
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+(2026, 5, '1. Runde', '', 0, 0, '', 0, 0),
+
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0),
+(2026, 6, 'Qualifikation', '', 0, 0, '', 0, 0);
