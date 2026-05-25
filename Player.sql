@@ -1,12 +1,11 @@
 
 CREATE TABLE Player (
     PlayerID BIGINT NOT NULL AUTO_INCREMENT,
-    ClubID INT NULL,
+    ClubID BIGINT NULL,
     FirstName VARCHAR(255) NOT NULL,
     LastName VARCHAR(255) NOT NULL,
     IsActiv BOOLEAN NOT NULL,
     Gender CHAR(1) NULL,
-    Birthday DATE NULL DEFAULT NULL,
     PlayerCard INT NULL DEFAULT 0,
     PRIMARY KEY (PlayerID),
     FOREIGN KEY (ClubID) REFERENCES Club (ClubID) ON UPDATE RESTRICT ON DELETE RESTRICT
@@ -53,7 +52,11 @@ VALUES (1, 'Patrick', 'Lüftner', true, 'm', 123456789),
 (1, 'Max', 'Montag', true, 'm', 123456789),
 (1, 'Gernot', 'Bopp', true, 'm', 123456789),
 (1, 'Julian', 'Bopp', true, 'm', 123456789),
-(1, 'Jan', 'Hofmann', true, 'm', 123456789);
+(1, 'Jan', 'Hofmann', true, 'm', 123456789),
+(1, 'Lennart', 'Kopf', true, 'm', 123456789),
+(1, 'Robert', 'Reitz', true, 'm', 123456789),
+(1, 'Georg', 'Hartmann', true, 'm', 123456789),
+(1, 'Walter', 'Mayer', true, 'm', 123456789);
 
 CREATE TABLE Bonus (
     BonusID BIGINT NOT NULL AUTO_INCREMENT,
