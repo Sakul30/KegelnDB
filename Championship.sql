@@ -13,7 +13,7 @@ CREATE TABLE ClubChampionship (
     PRIMARY KEY (DuellID, Saison)
 ) ENGINE=InnoDB;
 
-INSERT INTO KVW.ClubChampionship 
+INSERT INTO ClubChampionship 
 (
     Saison,
     Level,
@@ -147,7 +147,7 @@ VALUES
 (2025, 6, 'Qualifikation', 'Mario Pfeffer', 0, 0, 'Jutta Westenburger', 4, 0),
 (2025, 6, 'Qualifikation', 'Hans Erich Zinsheimer', 4, 0, NULL, NULL, NULL);
 
-INSERT INTO KVW.ClubChampionship 
+INSERT INTO ClubChampionship 
 (
     Saison,
     Level,
