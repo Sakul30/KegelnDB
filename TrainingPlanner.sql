@@ -4,3 +4,12 @@ CREATE TABLE TrainingPlanner (
     TrainingTime INT NOT NULL,
     Name VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB;
+
+CREATE TABLE planner_entries (
+    EntryID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Lane INT NOT NULL,
+    StartTime TIME NOT NULL,
+    PlannerDate DATE NOT NULL,
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
